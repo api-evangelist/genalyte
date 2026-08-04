@@ -1,17 +1,43 @@
 aid: genalyte
 name: Genalyte
-description: 'Genalyte is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Genalyte, Inc. is a San Diego, California in-vitro diagnostics company building
+  point-of-care blood testing systems based on silicon photonic microring resonator technology.
+  Founded by Cary Gunn, the company developed the Maverick Diagnostic System and its successor
+  Merlin, an automated benchtop analyzer that runs hematology, chemistry and immunoassay panels
+  — including CBC, lipid panel and comprehensive metabolic panel — from small whole-blood or
+  serum volumes and returns results in roughly twenty to thirty minutes while the patient is
+  still in the clinic. A cloud verification layer the company markets as CloudLab quality-checks
+  results and routes them into electronic medical record systems. Genalyte received FDA clearance
+  for a thyroid stimulating hormone immunoassay performed on a silicon chip and previously held
+  an FDA Emergency Use Authorization for a rapid COVID-19 antibody test. The company is
+  investor-backed (Khosla Ventures, Verily Life Sciences and others) and is a HIPAA covered
+  entity that publishes a Notice of Privacy Practices. As of this profile Genalyte publishes no
+  public developer portal, API documentation, or machine-readable API specification.'
+image: https://cdn.prod.website-files.com/6655c863b30886d6e62530de/681a83506a89334572f1478b_webclip-genalyte.png
 url: https://raw.githubusercontent.com/api-evangelist/genalyte/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: enriched-no-public-api
 specificationVersion: '0.20'
 created: '2026-08-04'
 modified: '2026-08-04'
+x-enrichment:
+  date: '2026-08-04'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
 tags:
 - Company
+- Health
+- Healthcare
+- Diagnostics
+- Medical Devices
+- Laboratory
+- Point of Care Testing
+- Life Sciences
+- Biotechnology
+- In Vitro Diagnostics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +46,34 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.genalyte.com/
+- type: About
+  url: https://www.genalyte.com/about-genalyte
+- type: Blog
+  url: https://www.genalyte.com/news
+- type: Support
+  url: https://www.genalyte.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.genalyte.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.genalyte.com/legal/terms-of-use
+- type: Compliance
+  url: https://www.genalyte.com/legal/notice-of-privacy-practices
+- type: Careers
+  url: https://www.genalyte.com/careers
+- type: Publications
+  url: https://www.genalyte.com/publications
+- type: LinkedIn
+  url: https://www.linkedin.com/company/genalyte-inc/
+- type: Twitter
+  url: https://x.com/Genalyte/
+- type: Facebook
+  url: https://www.facebook.com/Genalyte/
+- type: SecondaryMarket
   url: https://forgeglobal.com/genalyte_stock/
+- type: Conformance
+  url: conformance/genalyte-conformance.yml
+- type: LLMsTxt
+  url: llms/genalyte-llms.txt
+- type: DomainSecurity
+  url: security/genalyte-domain-security.yml

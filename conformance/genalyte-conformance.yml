@@ -1,0 +1,110 @@
+generated: '2026-08-04'
+method: searched
+source: https://www.genalyte.com/legal/notice-of-privacy-practices
+note: >-
+  Genalyte publishes no machine-readable API specification, so nothing here is derived from a
+  contract. Every entry below is grounded in a document Genalyte itself publishes on
+  genalyte.com, or is explicitly recorded as not published. Standards the company has not
+  claimed are recorded conforms: false with no evidence rather than left out, so a later
+  re-run can tell "checked and absent" from "not checked".
+standards:
+- id: hipaa
+  name: Health Insurance Portability and Accountability Act
+  conforms: true
+  evidence: >-
+    Genalyte publishes a HIPAA Notice of Privacy Practices stating "Genalyte, Inc. is required
+    by law to maintain the privacy of your individually identifiable health information" under
+    HIPAA and HITECH, identifying the company as a covered entity handling PHI from laboratory
+    services.
+  source: https://www.genalyte.com/legal/notice-of-privacy-practices
+  effective_date: '2020-11-25'
+- id: hitech
+  name: Health Information Technology for Economic and Clinical Health Act
+  conforms: true
+  evidence: Named alongside HIPAA in the published Notice of Privacy Practices.
+  source: https://www.genalyte.com/legal/notice-of-privacy-practices
+- id: ccpa
+  name: California Consumer Privacy Act
+  conforms: true
+  evidence: >-
+    The privacy policy names the California Consumer Privacy Act as applicable law governing
+    business purposes for collected personal data.
+  source: https://www.genalyte.com/legal/privacy-policy
+  effective_date: '2020-11-25'
+- id: fda-510k
+  name: FDA premarket clearance (in-vitro diagnostic device)
+  conforms: true
+  evidence: >-
+    Genalyte announced FDA clearance on 2024-07-22 of a Thyroid Stimulating Hormone immunoassay
+    run on the silicon-chip-based Maverick device, described as "the first quantitative
+    immunoassay to be cleared on a silicon chip based device". The company also previously held
+    an FDA Emergency Use Authorization for a rapid COVID-19 antibody test. The specific
+    regulatory pathway designation is not stated on the published page.
+  source: https://www.genalyte.com/post/fda-clears-silicon-chip-based-blood-test
+- id: gdpr
+  name: General Data Protection Regulation
+  conforms: false
+  evidence: null
+  note: Not mentioned in the published privacy policy, terms of use, or notice of privacy practices.
+- id: clia
+  name: Clinical Laboratory Improvement Amendments certification
+  conforms: false
+  evidence: null
+  note: >-
+    Not published. The Notice of Privacy Practices references "laboratory services we provide"
+    but no CLIA certificate number or certification statement appears on the public site.
+- id: cap
+  name: College of American Pathologists accreditation
+  conforms: false
+  evidence: null
+  note: Not published on the public site.
+- id: soc2
+  name: SOC 2
+  conforms: false
+  evidence: null
+  note: No trust center, audit report, or certification claim published.
+- id: iso-27001
+  name: ISO/IEC 27001
+  conforms: false
+  evidence: null
+  note: No certification claim published.
+- id: hl7-v2
+  name: HL7 v2 messaging
+  conforms: false
+  evidence: null
+  note: >-
+    Genalyte markets EMR result delivery through its CloudLab layer, but publishes no interface
+    specification, conformance statement, or integration guide naming HL7 v2, ORM/ORU, or any
+    other messaging standard.
+- id: hl7-fhir
+  name: HL7 FHIR
+  conforms: false
+  evidence: null
+  note: No FHIR endpoint, capability statement, or claim is published.
+- id: oauth2
+  name: OAuth 2.0
+  conforms: false
+  evidence: null
+  note: No public authorization server; /.well-known/oauth-authorization-server returns 404.
+- id: openid-connect
+  name: OpenID Connect
+  conforms: false
+  evidence: null
+  note: /.well-known/openid-configuration returns 404 on every reachable host.
+- id: rfc9116-security-txt
+  name: RFC 9116 security.txt
+  conforms: false
+  evidence: null
+  note: /.well-known/security.txt returns 404.
+- id: rfc9457-problem-details
+  name: RFC 9457 Problem Details for HTTP APIs
+  conforms: false
+  evidence: null
+  note: Not assessable — no public API contract exists to evaluate.
+x-evidence:
+  fetched: '2026-08-04'
+  sources_fetched:
+  - {url: 'https://www.genalyte.com/legal/notice-of-privacy-practices', http_status: 200}
+  - {url: 'https://www.genalyte.com/legal/privacy-policy', http_status: 200}
+  - {url: 'https://www.genalyte.com/legal/terms-of-use', http_status: 200}
+  - {url: 'https://www.genalyte.com/post/fda-clears-silicon-chip-based-blood-test', http_status: 200}

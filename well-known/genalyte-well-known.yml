@@ -1,0 +1,63 @@
+generated: '2026-08-04'
+method: probed
+source: live HTTP probes of every Genalyte host found in apis.yml and DNS
+host: https://www.genalyte.com
+result: none
+note: >-
+  No /.well-known/ discovery document was found on any Genalyte host. This file records the
+  probe itself so a later re-run can tell "not published" apart from "not yet checked". No
+  WellKnown, SecurityTxt, or APICatalog pointer is wired in apis.yml because nothing was
+  found — an empty result is a valid outcome, not a gap to paper over.
+documents: []
+probes:
+- host: www.genalyte.com
+  results:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /.well-known/agent-card.json
+    status: 404
+  - path: /.well-known/agent.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+  - path: /openapi.json
+    status: 404
+  - path: /swagger.json
+    status: 404
+  - path: /security.txt
+    status: 404
+  - path: /robots.txt
+    status: 200
+    note: Present, but contains only a sitemap reference; not a discovery artifact.
+  - path: /sitemap.xml
+    status: 200
+    note: 176 URLs, all marketing/news/publications pages. No developer or API pages.
+- host: api.genalyte.com
+  results:
+  - path: /.well-known/*
+    status: unreachable
+    note: Host does not resolve (dangling CNAME) — see security/genalyte-domain-security.yml
+- host: cloudlab.genalyte.com
+  results:
+  - path: /.well-known/*
+    status: unreachable
+    note: Host does not resolve (dangling CNAME).
+- host: lab.genalyte.com
+  results:
+  - path: /.well-known/*
+    status: unreachable
+    note: Host does not resolve (dangling CNAME to a CloudFront distribution with no A record).
+x-evidence:
+  fetched: '2026-08-04'
+  well_known_handler: >-
+    www.genalyte.com returns a fixed 88-byte "Invalid .well-known request" HTML body for every
+    /.well-known/* path, which is the Webflow hosting default. This confirms the 404s are a real
+    absence rather than a single-page-app catch-all masking a document.

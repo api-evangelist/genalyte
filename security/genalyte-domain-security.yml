@@ -1,0 +1,47 @@
+generated: '2026-08-04'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.genalyte.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct  5 21:16:59 2026 GMT
+  hsts: null
+domains:
+- domain: genalyte.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false
+x-observations:
+  fetched: '2026-08-04'
+  method: probed
+  note: >-
+    Recorded from live DNS lookups against both the local resolver and 8.8.8.8 on 2026-08-04.
+    Absence of a record is valid observed data, not an inference.
+  unresolved_cnames:
+  - host: api.genalyte.com
+    cname: api.prod.genalyte.com
+    a_records: none
+    http: unreachable
+    note: CNAME target has no A/AAAA record; the API hostname does not resolve to a live host.
+  - host: cloudlab.genalyte.com
+    cname: cloudlab.prod.genalyte.com
+    a_records: none
+    http: unreachable
+    note: CNAME target has no A/AAAA record.
+  - host: lab.genalyte.com
+    cname: d2475hl7gtlu89.cloudfront.net
+    a_records: none
+    http: unreachable
+    note: >-
+      CNAME points at an Amazon CloudFront distribution that returns no address records,
+      which is consistent with a deleted or disabled distribution.
+  email_posture:
+    spf: present
+    spf_qualifier: '~all (softfail) on the primary record; a second TXT record ends -all'
+    spf_note: >-
+      Two SPF-shaped TXT records are published on genalyte.com, which is a configuration
+      defect under RFC 7208 section 3.2 (a domain must publish exactly one SPF record).
+    dmarc: absent
+    dmarc_note: No _dmarc.genalyte.com TXT record was returned.

@@ -13,6 +13,17 @@ description: 'Genalyte, Inc. is a San Diego, California in-vitro diagnostics com
   investor-backed (Khosla Ventures, Verily Life Sciences and others) and is a HIPAA covered
   entity that publishes a Notice of Privacy Practices. As of this profile Genalyte publishes no
   public developer portal, API documentation, or machine-readable API specification.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://cdn.prod.website-files.com/6655c863b30886d6e62530de/681a83506a89334572f1478b_webclip-genalyte.png
 url: https://raw.githubusercontent.com/api-evangelist/genalyte/refs/heads/main/apis.yml
 x-type: company

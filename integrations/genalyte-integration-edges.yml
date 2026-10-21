@@ -1,0 +1,91 @@
+edges:
+- partner_name: FDA 510(k) premarket notifications (IVD / surgical panels)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K234091
+  category: FDA-cleared IVD / surgical device
+  contract_reference:
+    register: openFDA device/510k (decision_date >= 2016-01-01; panels CH HE IM MI PA TX SU OR)
+    standard: FDA 510(k) premarket clearance (IVD / surgical panels)
+    spec_file: null
+    role: fda-510k-holder
+    registered_name: Genalyte, Inc.
+    matched_domain: genalyte.com
+    matched_by: domain
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    register_id: K234091
+    certified_products:
+    - product: FDA 510(k) clearance, Clinical Chemistry panel
+      product_type: Clinical Chemistry
+      review_panel: CH
+      lapsed: false
+      latest_decision: '2024-07-22'
+      devices_sample:
+      - Maverick Diagnostic System TC1000; Maverick Test Panel A0.B0
+    - product: FDA 510(k) clearance, Immunology panel
+      product_type: Immunology
+      review_panel: IM
+      lapsed: false
+      latest_decision: '2019-10-25'
+      devices_sample:
+      - Maverick RNP Assay and Maverick Diagnostic System
+    signal_note: certified_products = one entry per FDA review PANEL held, never per device; openFDA carries decisions,
+      not withdrawals, so lapsed is always false
+    identity: wikidata Q30256744 'Genalyte' P856 http://www.genalyte.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
+- partner_name: FDA CLIA test categorizations
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfClia/search.cfm
+  category: CLIA-categorized test system maker
+  contract_reference:
+    register: FDA CLIA test categorization database (clia_detail.zip)
+    standard: FDA CLIA categorization
+    spec_file: null
+    role: clia-categorized-test-system-maker
+    registered_name: Genalyte, Inc.
+    matched_domain: genalyte.com
+    matched_by: domain
+    detected_by: sweep-ivd-diagnostics.py
+    detected: '2026-10-21'
+    register_id: CR230870
+    certified_products:
+    - product: FDA CLIA categorization, moderate complexity
+      product_type: moderate
+      lapsed: false
+      latest_effective: 2024/08/02
+      test_systems_sample:
+      - Genalyte, Inc., Maverick Diagnostic System TC1000
+    signal_note: 'certified_products = one entry per CLIA COMPLEXITY held (waived / moderate / high), never per
+      test system; the database lists categorizations, not withdrawals: lapsed false'
+    identity: wikidata Q30256744 'Genalyte' P856 http://www.genalyte.com
+    identity_source: wikidata P856 (labelled provenance step; Kin 2026-10-15 decision 1)
+  detected_by: sweep-ivd-diagnostics.py
+  first_seen: '2026-10-21'
+generated: '2026-10-21'
+method: searched
+source:
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.advamed.org/advameddx/members/
+checked:
+- https://api.fda.gov/device/510k.json
+- https://api.fda.gov/device/pma.json
+- https://api.fda.gov/device/registrationlisting.json
+- https://ec.europa.eu/tools/eudamed/api/
+- https://www.accessdata.fda.gov/premarket/ftparea/clia_detail.zip
+- https://www.advamed.org/advameddx/members/

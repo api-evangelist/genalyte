@@ -64,5 +64,84 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Genalyte is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/genalyte_stock/
+Genalyte, Inc. is a San Diego, California in-vitro diagnostics company building point-of-care blood testing systems based on silicon photonic microring resonator technology. Founded by Cary Gunn, the company developed the Maverick Diagnostic System and its successor Merlin, an automated benchtop analyzer that runs hematology, chemistry and immunoassay panels — including CBC, lipid panel and comprehensive metabolic panel — from small whole-blood or serum volumes and returns results in roughly twenty to thirty minutes while the patient is still in the clinic. A cloud verification layer the company markets as CloudLab quality-checks results and routes them into electronic medical record systems. Genalyte received FDA clearance for a thyroid stimulating hormone immunoassay performed on a silicon chip and previously held an FDA Emergency Use Authorization for a rapid COVID-19 antibody test. The company is investor-backed (Khosla Ventures, Verily Life Sciences and others) and is a HIPAA covered entity that publishes a Notice of Privacy Practices. As of this profile Genalyte publishes no public developer portal, API documentation, or machine-readable API specification.
+
+**Areas:** Company · Health · Healthcare · Diagnostics · Medical Devices · Laboratory · Point of Care Testing · Life Sciences · Biotechnology · In Vitro Diagnostics
+
+## Genalyte on APIs.io
+
+Everything profiled for Genalyte is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/genalyte/](https://apis.io/providers/genalyte/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Genalyte Domain Security](https://apis.io/security/genalyte/genalyte-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.genalyte.com/)
+- [Support](https://www.genalyte.com/contact-us)
+- [Blog](https://www.genalyte.com/news)
+- [Compliance](https://www.genalyte.com/legal/notice-of-privacy-practices)
+- [Terms of service](https://www.genalyte.com/legal/terms-of-use)
+- [Privacy policy](https://www.genalyte.com/legal/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 15.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 28.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 18.8** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/genalyte/](https://apis.io/providers/genalyte/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Genalyte: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/genalyte/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
